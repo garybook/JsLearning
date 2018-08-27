@@ -1,0 +1,67 @@
+/*.parent{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*background-color: #cccccc;*/
+    /*margin-left: 100px;*/
+    /*margin-top:100px;*/
+    /*!*overflow: hidden;*!*/
+    /*!*display: inline-block;*!*/
+    /*position: absolute;*/
+/*}*/
+/*.child{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background-color: #000000;*/
+    /*margin-left: 50px;*/
+    /*margin-top: 50px;*/
+/*}*/
+
+
+
+
+/*.floatBox{*/
+    /*height: 100px;*/
+    /*width: 100px;*/
+    /*float: left;*/
+    /*background-color: #000000;*/
+    /*opacity: 0.3;*/
+/*}*/
+/*.normalBox{*/
+    /*!*float: left;*!*/
+    /*height: 100px;*/
+    /*width: 100px;*/
+    /*line-height: 100px;*/
+    /*background-color: #ff4400;*/
+/*}*/
+
+
+
+
+
+
+.content{
+    border: 1px solid #000000;
+
+    /*触发父元素bfc就能看到子元素，就能将子元素包裹住*/
+    /*overflow: hidden;*/
+
+    /**设置float:left/right 或者position: absolute 系统会从内部把这个元素设置为inline-block*/
+    /*float: left;*/
+    /*position: absolute;*/
+}
+.demo{
+    width: 100px;
+    height: 100px;
+    background-color: #ff4400;
+    float: left;
+}
+/*p{*/
+    /*!*清除浮动流，下沉到对应位置，父元素能看到p 就能将所有子元素包裹住*!*/
+    /*clear: both;*/
+/*}*/
+/*或者通过伪元素清除浮动流*/
+.content::after{
+    content: "";
+    clear: both;
+    display: block;
+}

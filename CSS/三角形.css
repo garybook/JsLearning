@@ -1,0 +1,9 @@
+div{
+    width: 0;
+    height: 0;
+    border: 100px solid;
+    border-left-color: transparent;
+    border-right-color: #000000;
+    border-top-color: #ff00ff;
+    border-bottom-color: #00ffff;
+}

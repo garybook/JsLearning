@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #424242;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav>li{
+    float: left;
+}
+
+.nav>li>a{
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 10px;
+    color: #ff4400;
+    background-color: #ffffff;
+    display:inline-block;
+    font-weight: bold;
+    padding: 0px 8px ;
+}
+
+.nav>li>a:hover{
+    color: #ffffff;
+    background-color: #ff4400;
+    border-radius: 15px;
+}
+
+.nav::after{
+    /*清除浮动流*/
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.divider{
+    border: 1px solid #ff4400;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex弹性布局</title>
+    <style>
+        .parentDiv{
+            width:500px;
+            height:500px;
+            background:#eee;
+            /*父类属性*/
+            display: flex;
+            /*子元素水平排列 center居中  space-between两端对齐， space-around*/
+            justify-content: center;
+            /*子元素垂直排列*/
+            align-items: center;
+            /*排列顺序 column按列column-reverse按列反转 row 按行排列*/
+            flex-direction: column-reverse;
+        }
+        .childDiv{
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            line-height: 100px;
+            border: 3px solid black;
+            background-color: #f40;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parentDiv">
+        <div class="childDiv">1</div>
+        <div class="childDiv">2</div>
+        <div class="childDiv">3</div>
+    </div>
+
+</body>
+</html>

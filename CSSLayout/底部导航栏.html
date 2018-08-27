@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>底部导航栏</title>
+    <style>
+        .nav_box{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .nav{
+            /**设置margin和padding去除ul标签的空出值 使控件靠左并且贴近底部**/
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            color: #000;
+            background:#eee;
+            height: 100px;
+            line-height: 100px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .nav li{
+            flex-grow: 1;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            /**设置mlist-style去除li标签的原点**/
+            list-style: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="nav_box">
+        <ul class="nav">
+            <li>首页</li>
+            <li>商城</li>
+            <li>购物车</li>
+        </ul>
+    </div>
+</body>
+</html>

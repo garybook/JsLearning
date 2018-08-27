@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug</title>
+    <link rel="stylesheet" href="Bug.css">
+</head>
+<body>
+
+    <p>BUG1：父子嵌套的情况，垂直方向的margin，是父子共用的， 取最大值
+        会导致margin塌陷的问题
+    </p>
+    <h5>bfc-->block format content</h5>
+    如何触发一个盒子的bfc
+    <br>
+    1.设置position:absolute
+    <br>
+    2.设置display:inline-block
+    <br>
+    3. float:left/right
+    <br>
+    4.overflow:hidden  溢出盒子部分隐藏
+    <br>
+
+    <!--<div class="parent">-->
+        <!--<div class="child"></div>-->
+    <!--</div>-->
+
+    <br><br><br><br><br>
+    浮动元素产生了浮动流
+    <br>
+    所有产生浮动流的元素（float），块级元素看不到他们（被覆盖）
+    <br>
+    触发了bfc的元素（包括块元素）和文本类属性元素以及文本元素都能看到浮动元素
+    <br>
+
+    <!--<div class="floatBox">-->
+    <!--</div>-->
+    <!--<div class="normalBox">-->
+    <!--</div>-->
+    <!--<img src="zxc.png" alt="占位符">-->
+
+
+    <!--BUG2： 父元素看不到产生浮动流子元素 无法包裹子元素-->
+<div class="content">
+    <div class="demo">1</div>
+    <div class="demo">2</div>
+    <div class="demo">3</div>
+    <!--<p></p>-->
+</div>
+</body>
+</html>

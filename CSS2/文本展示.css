@@ -1,0 +1,33 @@
+div{
+    height: 200px;
+    width: 30%;
+    border: 1px solid #cccccc;
+    background-color: #eeeeee;
+    color: #000000;
+    text-align: left;
+    /**首行缩进2个字体
+       em = 1 * fontSize;
+       */
+    text-indent: 2em;
+}
+
+.line_through{
+    /*text-decoration划线属性 中部划线*/
+    text-decoration: line-through;
+}
+
+.line_under{
+    /*text-decoration划线属性 下划线*/
+    text-decoration: underline;
+    color: #4352ff;
+    cursor: pointer;;
+}
+
+/**
+伪类选择器
+*/
+strong:hover{
+    border-radius: 50%;
+    background-color: #ff4400;
+    color: #ffffff;
+}

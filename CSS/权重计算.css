@@ -1,0 +1,18 @@
+/*父子选择器/派生xuanzq*/
+div span{
+    color: #ff4400;
+}
+
+#parent span{
+    font-weight: bold;
+}
+
+.pClass span{
+    font-family: "Arial Black";
+}
+
+/*直接父子选择器
+    直接作用于直接子元素*/
+span>div{
+    font-size: 20px;
+}

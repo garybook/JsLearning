@@ -1,0 +1,12 @@
+/*
+并列选择器
+*/
+
+div,strong,.demo{
+    color: red;
+}
+
+div,strong,p{
+    color: green;
+}
+
